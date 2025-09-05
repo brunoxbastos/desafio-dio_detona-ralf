@@ -1,0 +1,56 @@
+/*
+ * Reset CSS Moderno
+ * Remove estilos padrão dos navegadores e define padrões úteis
+ */
+
+/* 1. Define o box-sizing para todos os elementos */
+/* Isso facilita o cálculo de tamanhos, pois padding e border não adicionam mais à largura/altura total */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* 2. Remove margens e paddings padrão */
+/* Aplica-se a todos os elementos para evitar espaçamentos indesejados */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Estiliza as listas */
+/* Remove os marcadores de lista padrão (bolinhas ou números) */
+ol, ul {
+  list-style: none;
+}
+
+/* 4. Reseta a cor do link e a decoração do texto */
+/* Garante que os links não sejam sublinhados por padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Garante que as imagens não ultrapassem seus contêineres */
+/* Ajuda na responsividade, fazendo com que as imagens se ajustem automaticamente */
+img {
+  max-width: 100%;
+  display: block; /* Remove o espaço extra abaixo de imagens em alguns navegadores */
+}
+
+/* 6. Define a herança de fontes e outras propriedades */
+/* Torna mais fácil gerenciar fontes e outras propriedades globais */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 7. Redefine o comportamento padrão de formulários e botões */
+/* Remove estilos padrão para botões e outros elementos interativos */
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}

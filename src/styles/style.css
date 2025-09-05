@@ -1,0 +1,37 @@
+body {
+    font-family: "cofo-sans-pixel", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 10vh;
+    width: 100%;
+    padding: 1vh;
+    color: red;
+    background-color: black;
+}
+
+.panel {
+    display: flex;
+    border: 1px solid red;
+}
+
+.panel-row {
+    display: flex;
+}
+
+.square {
+    height: 25vh;
+    width: 25vh;
+    border: solid 1px blue;
+}
